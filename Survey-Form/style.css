@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.divider{
+    margin: 25px;
+    border-bottom: 3px solid #000;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+/* class="container" style*/
+.container{
+    background: linear-gradient(rgb(2, 112, 79), rgb(104, 190, 24), rgb(42, 201, 153), rgb(104, 190, 24));
+    width: 100%;
+    height: 100%;
+}
+
+/* class="header" style*/
+header{
+    text-align: center;
+}
+
+h1{
+    font-size: 70px;
+    padding: 15px;
+    font-style: italic;
+    color: #eee;
+    text-shadow: 3px 3px 3px #000;
+}
+
+#description{
+    font-size: 28px;
+    padding: 15px;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+
+/* form style */
+form{
+    display: grid;
+    align-content: center;
+    background: linear-gradient(rgb(4, 66, 82), rgb(49, 124, 236), rgb(23, 209, 209));
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 15px;
+}
+
+label{
+    position: relative;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
+}
+
+/* form-group style*/
+.form-group{
+    font-size: 20px;
+}
+
+/* id="name-label" style */
+
+/* input style*/
+.form-control{
+    display: block;
+    margin-left: 50px;
+    width: 88%;
+    font-size: 22px;
+    border: none;
+}
+
+input{
+    background-color: #413a3a;
+    border-radius: 5px;
+    border: none;
+}
+
+::placeholder{
+    color: #fff3f3;
+}
+
+.input-textarea{
+    width: 80%;
+    height: 120px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #413a3a;
+}
+
+select{
+    background-color: #413a3a;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-group p{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.submit-button{
+    width: 80%;
+    height: 50px;
+    margin: 20px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 10px;
+    transition: all 1 ease-in-out;
+}
+
+.submit-button:hover{
+    box-shadow: 2px 2px 2px #000;
+    background: linear-gradient(to left , rgb(42, 201, 153), rgb(104, 190, 24));
+    cursor: pointer;
+}

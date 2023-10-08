@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Web Developer Survey Form</h1>
+            <p id="description" class="description text-center">Thank you for submiting this form</p>
+        </header>
+        <form id="survey-form">
+            <div class="divider"></div>
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="divider"></div>
+            <div class="form-group">
+                <label id="email" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="divider"></div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="number" id="number" min="15" max="90" class="form-control" placeholder="Age" required>
+            </div>
+            <div class="divider"></div>
+            <div class="form-group">
+                <p>Select your current field in the company</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value="">Select one option</option>
+                    <option class="op" value="designer">Web Designer</option>
+                    <option class="op" value="Programmer">Web Programmer</option>
+                    <option class="op" value="full">Full stack</option>
+                    <option class="op" value="front">Front-End</option>
+                    <option class="op" value="back">Back-End</option>
+                </select>
+            </div>
+            <div class="divider"></div>
+            <div class="form-group">
+                <p>Any comments about projects you've developed?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here ..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
